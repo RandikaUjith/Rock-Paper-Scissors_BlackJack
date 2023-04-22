@@ -1,0 +1,126 @@
+body {
+    margin: 20px; 
+}
+
+.main-div, .main-div2, .main-div3 {
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.heading-div {
+    border: 2px solid rgb(143, 22, 22);
+    margin: 0px;
+    margin-bottom: -2px;
+    
+}
+
+.image-div, .button-challange-div, .balckjack-button-div, .blackjack-result-div {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(143, 22, 22);
+    padding: 15px;
+    
+}
+
+.rock-image, .paper-image, .scissors-image {
+    width: 150px; 
+    height: 150px;
+    border-radius: 10px;
+}
+
+.rock-image:hover, .paper-image:hover, .scissors-image:hover {
+    box-shadow: 0px 0px 20px rgb(49, 54, 206);
+}
+
+.result-text {
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0px 0px 40px black ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.GoAgain-button {
+    margin-top: 30px;
+    width: 120px;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
+
+/* BUtton Challange*/
+
+.red-button, .green-button, .blue-button, .grey-button {
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+.red-button {
+    background-color: red;
+}
+
+.green-button {
+    background-color: green;
+}
+
+.blue-button {
+    background-color: blue;
+}
+
+.grey-button {
+    background-color: grey;
+}
+
+.blackjack-game-div {
+    border: 2px solid rgb(143, 22, 22);
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 0 auto;
+    background-image: url('https://www.pngmagic.com/product_images/dark-green-background-center-round-light-green-lighting-apk.jpg');
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.blackjack-you-div, .blackjack-dealer-div {
+    border: 2px solid rgb(143, 22, 22);
+    text-align: center;
+    flex: 1;
+}
+
+.blackjack-image-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    align-items: center;
+
+}
+
+.card-image {
+    width: 100px;
+    height: 140px;
+    border-radius: 5px;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    
+}
+
+.blackjack-result-div {
+    display: flex;
+    justify-content: center;
+}

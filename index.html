@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Game Challanges</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="heading-div"><h1>Rock Paper Scissors</h1></div>
+        <div id="image-div-id" class="image-div">
+            <img src="images/rock.png" alt="Rock" id="rock" class="rock-image" onclick="yourChoiceFunction(this.id)">
+            <img src="images/paper.jpg" alt="Paper" id="paper" class="paper-image" onclick="yourChoiceFunction(this.id)">
+            <img src="images/scissors.png" alt="Scissors" class="scissors-image" id="scissors" onclick="yourChoiceFunction(this.id)">
+        </div>
+
+    </div>
+
+    <div class="main-div2">
+        <div class="heading-div"><h1>Button Challange</h1></div>
+        <div class="button-challange-div">
+            <select name="button-color" id="buttonColor" onchange="selectColor(this.value)">
+                <option>Select</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="random">Random</option>
+                <option value="reset">Reset</option>
+            </select>
+            <button class="red-button">Red</button>
+            <button class="green-button">Green</button>
+            <button class="blue-button">Blue</button>
+            <button class="grey-button">Grey</button>
+        </div>
+
+    </div>
+    <div class="main-div3">
+        <div class="heading-div">
+            <h1>BlackJack Game</h1>
+            <h2><span id="blackjack_header_display_id">Let's Play</span></h2>
+        </div>
+        <div class="blackjack-game-div">
+            <div class="blackjack-you-div">
+                <div>You:<span id="your_score_display">0</span></div>
+                <div class="blackjack-image-div" id="you-image-id"></div>
+            </div>
+            <div class="blackjack-dealer-div">
+                <div>Dealer: <span id="dealer_score_display">0</span></div>
+                <div class="blackjack-image-div" id="dealer-image-id"></div> 
+            </div>
+
+        </div>
+        <div class="balckjack-button-div">
+            <button class="green-button" id="hit_button">Hit</button>
+            <button class="blue-button" id="deal_button">Deal</button>
+            <button class="red-button" id="stand_button">Stand</button>
+        </div>
+        <div class="blackjack-result-div">
+            <table>
+                <tr>
+                    <th>Win</th>
+                    <th>lost</th>
+                    <th>Draw</th>
+                </tr>
+                <tr>
+                    <td id="win_score">0</td>
+                    <td id="lost_score">0</td>
+                    <td id="draw_score">0</td>
+                </tr>    
+                
+            </table>
+
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
